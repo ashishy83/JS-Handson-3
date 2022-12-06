@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iteration Statements</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        pre{
+            color: crimson;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Q1. Find the number of digits.</h2>
+    <pre>
+        const Find_Digits = (N) => 
+        {
+        let count=0;
+        while(N!== 0){
+        N = (Math.floor(N/10));
+        ++count;
+        }
+        return count;
+            
+        };
+    </pre>
+    <h2>Q2. Find the Fives.</h2>
+    <pre>
+        const Find_Five = (N) => 
+        {
+        
+            let count=0;
+            while(N>0){
+            r= N%10;
+            
+            if(r==5){
+            count++;
+            }
+            N=parseInt(N/10);
+            }
+            return count;
+        };
+    </pre>
+    
+    <h2>Q3. Find Sum.</h2>
+    <pre>
+        const findSum = (n) => {
+            let sum=0;
+            for (let i=1; i<=n;i++){
+            if(i%2===0){
+                sum=sum+i;
+            }
+            
+            }
+            return sum;
+        };
+    </pre>
+    <h2>Q4. Find the sum of a digit of a Number.</h2>
+    <pre>
+        const Number_Sum = (N) => 
+        {
+        let sum=0;
+            while (N) {
+            sum += N % 10;
+            N = Math.floor(N / 10);
+            }
+            
+            
+                return sum;
+
+        };
+    </pre>
+
+    <h2>Q5. Print the Odds.</h2>
+    <pre>
+        
+        const Print_Odd = (N) => 
+        {
+        
+        console.log("2");
+            for(let i=2; i<=N; i++){
+            if(i%2 !== 0)
+            {
+            console.log(i); 
+            }
+            
+            }
+        };
+    </pre>
+
+    <h2>Q6. Print the Pattern</h2>
+    <pre>
+        
+        const Print_pattern = (N) => 
+        {
+            let str="";
+            
+            for( i=1; i<=N; i++){
+            
+            for( j=1; j<=i; j++){
+            str +="*"; 
+            }
+            str+="\n";
+            }
+            console.log(str);
+        };
+    </pre>
+
+    <h2>Q7. Check whether a number is Prime or Not.</h2>
+    <pre>
+        
+        const Prime_Check = (N) => 
+        {
+        let count=0;
+        if(N===0 || N===1){
+            return ("NO");
+        }
+        
+        else{
+            for(i=2; i<=N; i++){
+            if(N%i === 0)
+            {
+                count++;
+            
+            }
+            }
+        }
+            if(count==1){
+            return "YES";
+            }
+            else{
+            return "NO";
+            }
+            
+        };
+    </pre>
+
+    <h2>Q8. Print Numbers</h2>
+    <pre>
+        
+        const printNumbers = (n) => {
+        
+            for(let i=1; i<=n; i++){
+            
+            console.log(i);
+            } 
+            
+        
+        };
+    </pre>
+    <h2>Q9. Print the Tables.</h2>
+    <pre>
+        
+        const Print_Table = (N) => 
+        {
+            for(i=1; i<=10; i++){
+            console.log(N +" * " +i +" = "+(N*i));
+            }
+        
+        };
+    </pre>
+</body>
+</html>
